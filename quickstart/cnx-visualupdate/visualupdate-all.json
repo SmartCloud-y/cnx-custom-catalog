@@ -1,0 +1,20 @@
+{
+    "name": "Visual Update 1 for HCL Connections on SmartCloud-y",
+    "title": "Visual Update 1 for HCL Connections on SmartCloud-y",
+    "description": "Customizer extension to re-theme HCL Connections on SmartCloud-y.",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "name": "Visual Update 1 for HCL Connections on SmartCloud-y",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "common/cnx-custom-theme/periscope.js"
+                ]
+            },
+            "path": "global"
+        }
+    ]
+}
