@@ -1,0 +1,33 @@
+{
+    "name": "Sample proxy configuration on SmartCloud-y",
+    "title": "Sample proxy configuration on SmartCloud-y",
+    "description": "Proxy whitelist for Connections on SmartCloud-y",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "name": "SampleWhitelist",
+            "type": "com.ibm.customizer.proxy",
+            "payload": {
+                "whitelist": [
+                    {
+                        "method": [
+                            "GET",
+                            "POST",
+                            "PUT",
+                            "DELETE"
+                        ],
+                        "domain": "factor-y.com"
+                    },
+                    {
+                        "method": [
+                            "GET"
+                        ],
+                        "url": "http://xml2.corriereobjects.it/rss/homepage.xml"
+                    }
+                ]
+            }
+        }
+    ]
+}
